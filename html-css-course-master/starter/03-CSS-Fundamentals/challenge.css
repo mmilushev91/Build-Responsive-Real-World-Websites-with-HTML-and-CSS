@@ -1,10 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: sans-serif;
-  border: 4px solid black;
   line-height: 1.4;
 }
 
+article {
+  border: 4px solid black;
+  width: 825px;
+  margin: 10% auto;
+}
+
 h2,
+h3,
 .shipping,
 button {
   text-transform: uppercase;
@@ -13,6 +24,18 @@ button {
 h2 {
   background-color: #f7f7f7;
   text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+h3 {
+  margin-bottom: 15px;
+  font-weight: 550;
+}
+
+.link,
+.shipping {
+  margin-bottom: 20px;
 }
 
 strong {
@@ -37,6 +60,11 @@ a:active {
 
 ul {
   list-style: square;
+  margin-left: 20px;
+}
+
+li {
+  margin-bottom: 10px;
 }
 
 button {
@@ -45,9 +73,61 @@ button {
   background-color: black;
   color: white;
   cursor: pointer;
+  width: 100%;
+  padding: 20px;
 }
 
 button:hover {
   background-color: white;
   color: black;
+  border-top: 4px solid black;
+}
+
+h2::before {
+  content: "SALE";
+  display: inline-block;
+  position: absolute;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  padding: 6px 12px;
+  letter-spacing: 2px;
+  top: -18px;
+  left: -35px;
+}
+
+.box {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+
+.black {
+  background-color: black;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.green {
+  background-color: green;
+}
+
+.brown {
+  background-color: brown;
+}
+
+.box:last-of-type {
+  margin-right: 0;
 }
